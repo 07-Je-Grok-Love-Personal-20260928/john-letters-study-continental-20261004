@@ -2617,3 +2617,59 @@ details.fold.ql-card summary {
   .kms-item { min-height: 0; }
   .hero-toolbar .btn-text { flex: 1 1 100%; }
 }
+
+/* —— Johannine letters: tests, two doors, three men —— */
+.letter-rail, .test-board, .men-board, .door-pair {
+  display: grid;
+  gap: .85rem;
+  grid-template-columns: 1fr;
+  margin: 1rem 0 1.25rem;
+}
+.letter-node, .test-card, .man-card, .door {
+  min-width: 0;
+  padding: .95rem 1rem 1.05rem;
+  border-radius: var(--radius);
+  background: #152238;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+.letter-node { border-top: 4px solid var(--gold); }
+.letter-node.ln-2 { border-top-color: #c45c5c; }
+.letter-node.ln-3 { border-top-color: #5ec4c0; }
+.letter-k {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: .25rem;
+}
+.ln-2 .letter-k { color: #f0b8b8; }
+.ln-3 .letter-k { color: #a8e8e4; }
+.test-card { border-top: 4px solid var(--gold); }
+.test-card.t-love { border-top-color: #5ec4c0; }
+.test-card.t-obey { border-top-color: #3d9a6a; }
+.test-card h3, .man-card h3, .letter-node h3, .door h3 { margin: .15rem 0 .4rem; font-size: 1.05rem; }
+.test-card p, .man-card p, .letter-node p, .door p { margin: 0; color: var(--text-soft); }
+.man-card.m-gaius { border-top: 4px solid #3d9a6a; }
+.man-card.m-dio { border-top: 4px solid #c45c5c; }
+.man-card.m-dem { border-top: 4px solid #6ba3e0; }
+.man-role { font-size: .78rem; font-weight: 700; letter-spacing: .04em; }
+.m-gaius .man-role { color: #8ed4b0; }
+.m-dio .man-role { color: #f0b8b8; }
+.m-dem .man-role { color: #b8d4f0; }
+.door.door-shut { border-top: 4px solid #c45c5c; }
+.door.door-open { border-top: 4px solid #3d9a6a; }
+.viz-note {
+  font-size: .88rem;
+  color: var(--text-muted);
+  margin: -.4rem 0 1rem;
+}
+@media (min-width: 768px) {
+  .letter-rail, .test-board, .men-board { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .door-pair { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 360px) {
+  .letter-node, .test-card, .man-card, .door, .clause { padding-left: .75rem; padding-right: .75rem; }
+}

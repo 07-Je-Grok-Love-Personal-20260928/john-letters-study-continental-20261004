@@ -1,12 +1,12 @@
 {
-  "name": "first-john-study-continental-20261003",
+  "name": "john-letters-study-continental-20261004",
   "version": "1.0.0",
   "private": true,
-  "description": "欧陆改革宗约翰一书研读：道成肉身、爱与确据",
+  "description": "欧陆改革宗约翰书信研读：约翰一书、二书、三书",
   "scripts": {
     "start": "npx --yes serve -l 3456 .",
     "preview": "npx --yes serve -l 3456 ."
   },
-  "keywords": ["1-john", "reformed", "zh-CN", "static", "continental"],
-  "homepage": "https://first-john-study-continental-20261003.surge.sh/"
+  "keywords": ["1-john", "2-john", "3-john", "reformed", "zh-CN", "static", "continental"],
+  "homepage": "https://john-letters-study-continental-20261004.surge.sh/"
 }
