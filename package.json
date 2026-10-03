@@ -1,0 +1,12 @@
+{
+  "name": "first-john-study-continental-20261003",
+  "version": "1.0.0",
+  "private": true,
+  "description": "欧陆改革宗约翰一书研读：道成肉身、爱与确据",
+  "scripts": {
+    "start": "npx --yes serve -l 3456 .",
+    "preview": "npx --yes serve -l 3456 ."
+  },
+  "keywords": ["1-john", "reformed", "zh-CN", "static", "continental"],
+  "homepage": "https://first-john-study-continental-20261003.surge.sh/"
+}
